@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from './Header/Header';
 import Module from './Module/Module';
-import ModuleFour from './ModuleFour/ModuleFour';
+// import ModuleFour from './ModuleFour/ModuleFour';
 import { data } from 'modules';
 
 export const App = () => {
