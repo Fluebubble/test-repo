@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fluebubble/test-repo/static/css/main.c30274b0.css",
+    "main.js": "/Fluebubble/test-repo/static/js/main.521d4770.js",
+    "index.html": "/Fluebubble/test-repo/index.html",
+    "main.c30274b0.css.map": "/Fluebubble/test-repo/static/css/main.c30274b0.css.map",
+    "main.521d4770.js.map": "/Fluebubble/test-repo/static/js/main.521d4770.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c30274b0.css",
+    "static/js/main.521d4770.js"
+  ]
+}
