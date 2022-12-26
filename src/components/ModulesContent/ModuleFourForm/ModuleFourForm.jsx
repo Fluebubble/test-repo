@@ -1,7 +1,8 @@
-import ModuleContentBox from 'components/Module/Module';
+// import ModuleContentBox from 'components/Module/Module';
+import Box from 'components/Box/Box';
 import { useState } from 'react';
 
-const ModuleFour = () => {
+export const ModuleFour = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
 
@@ -15,7 +16,8 @@ const ModuleFour = () => {
   };
 
   return (
-    <ModuleContentBox>
+    // <div>KekModuleFour</div>
+    <Box bg='background' mt={4} mb={4} p={4} color='text' border='plashka' borderRadius='borderRadius'>
       <form>
         <label>
           Name
@@ -32,8 +34,6 @@ const ModuleFour = () => {
         </label>
         <button type="submit">Start!</button>
       </form>
-    </ModuleContentBox>
+    </Box>
   );
 };
-
-export default ModuleFour;

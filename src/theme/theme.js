@@ -86,6 +86,9 @@ const theme = {
     },
   },
   radii: { borderRadius: { small: '5px', medium: '15px', big: '30px' } },
+  borders: {
+    plashka: '5px'
+  }
 };
 
 export default theme;

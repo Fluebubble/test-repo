@@ -15,14 +15,14 @@ const Menu = ({ setSelectedBlock, modules, selectedBlock }) => {
   // console.log(setSelectedBlock)
   return (
     <>
-      <Box bg="background">
+      <Box bg="background" p={3}>
         <Ul>
           {modules.map(module => (
             <MenuItem
               name={module.name}
               key={module.id}
               setSelectedBlock={setSelectedBlock}
-              // selectedBlock={selectedBlock}
+              selectedBlock={selectedBlock}
             />
           ))}
           <Button icon={GrTest}>TestButton</Button>

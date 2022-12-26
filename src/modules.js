@@ -6,32 +6,32 @@ export const data = {
       apps: ['Form', 'Box Stylization', 'Contact Book'],
     },
     {
-      id: 1,
+      id: 2,
       name: 'Module 2',
       apps: ['Form', 'Color Picker', 'Contact Book'],
     },
     {
-      id: 1,
+      id: 3,
       name: 'Module 3',
       apps: ['Form', 'Color Picker', 'Contact Book'],
     },
     {
-      id: 1,
+      id: 4,
       name: 'Module 4',
       apps: ['Form', 'Color Picker', 'Contact Book'],
     },
     {
-      id: 2,
+      id: 5,
       name: 'Module 5',
       apps: ['Ajax', 'Redux', 'Huyax'],
     },
     {
-      id: 3,
+      id: 6,
       name: 'Module 6',
       apps: ['Kek', 'Becks', 'Lowenbrau'],
     },
     {
-      id: 4,
+      id: 7,
       name: 'Module 7',
       apps: ['Burger', 'Cola', 'Fries'],
     },
