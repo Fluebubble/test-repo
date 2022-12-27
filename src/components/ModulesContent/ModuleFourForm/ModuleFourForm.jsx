@@ -2,7 +2,7 @@
 import Box from 'components/Box/Box';
 import { useState } from 'react';
 
-export const ModuleFour = () => {
+export const ModuleFourForm = () => {
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
 

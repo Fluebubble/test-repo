@@ -1,8 +1,9 @@
 import ModuleMenu from 'components/ModuleMenu/ModuleMenu';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
-import { ModuleFour } from 'components/ModulesContent/ModuleFourForm/ModuleFourForm';
+import { ModuleFourForm } from 'components/ModulesContent/ModuleFourForm/ModuleFourForm';
 import { Title } from './Module.styled';
+import { ModuleFourColorPicker } from 'components/ModulesContent/ModuleFourColorPicker/ModuleFourColorPicker';
 
 const ModuleWrapper = styled.div`
   max-width: 1200px;
@@ -24,8 +25,14 @@ const Module = ({ module }) => {
   return (
     <ModuleWrapper>
       <Title>{name}</Title>
-      <ModuleMenu apps={apps} handleClick={handleClick} />
-      {selectedApp === 'Form' && <ModuleFour />}
+      <ModuleMenu
+        apps={apps}
+        selectedApp={selectedApp}
+        handleClick={handleClick}
+      />
+      <Title>{selectedApp}</Title>
+      {selectedApp === 'Form' && <ModuleFourForm />}
+      {selectedApp === 'Color Picker' && <ModuleFourColorPicker />}
     </ModuleWrapper>
   );
 };

@@ -2,13 +2,15 @@ import styled from 'styled-components';
 import Button from 'components/Button/Button';
 import { useState } from 'react';
 import Box from 'components/Box/Box';
+import { StyledButton } from './ModuleMenu.styled';
+
 const ModuleMenuBox = styled.ul`
   display: flex;
   gap: 10px;
   align-items: center;
 `;
 
-const ModuleMenu = ({ apps, handleClick}) => {
+const ModuleMenu = ({ apps, selectedApp, handleClick}) => {
   console.log('apps = ', apps);
 
 
@@ -23,9 +25,9 @@ const ModuleMenu = ({ apps, handleClick}) => {
       {apps.map((app, idx) => {
         return (
           <li key={idx}>
-            <Button type="button" onClick={() => handleClick(app)}>
+            <StyledButton type="button" app={app} selectedApp={selectedApp} onClick={() => handleClick(app)}>
               {app}
-            </Button>
+            </StyledButton>
           </li>
         );
       })}
