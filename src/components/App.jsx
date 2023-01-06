@@ -1,18 +1,25 @@
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './Header/Header';
 import Module from './Module/Module';
 // import ModuleFour from './ModuleFour/ModuleFour';
 import { data } from 'modules';
 import { ModuleOneBox } from './ModulesContent/ModuleOne/ModuleOneBox';
 import { ModuleFour } from './ModulesContent/ModuleFourForm/ModuleFourForm';
+import { useLocalStorage } from 'hooks/useLocalStorage';
 
 export const App = () => {
   const { modules } = data;
 
-  const [selectedBlock, setSelectedBlock] = useState('Module 4');
-  console.log(data.modules[0].name);
-  console.log(selectedBlock);
-
+  // const [selectedBlock, setSelectedBlock] = useState('Module 4');
+  const [selectedBlock, setSelectedBlock] = useLocalStorage(
+    'SELECTED_MODULE',
+    'Module 1'
+  );
+  // console.log(data.modules[0].name);
+  // console.log(selectedBlock);
+  // toast('INPUT THE NAME');
   return (
     <>
       <Header
@@ -29,6 +36,7 @@ export const App = () => {
       {selectedBlock === data.modules[6].name && <Module module={modules[6]} />}
       <ModuleOneBox />
       {/* <ModuleFour /> */}
+      <ToastContainer />
     </>
   );
 };

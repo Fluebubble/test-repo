@@ -3,7 +3,7 @@ import { StyledButton } from './MenuItem.styled';
 
 const MenuItem = ({ name, setSelectedBlock, selectedBlock }) => {
   // console.log(setSelectedBlock);
-  console.log(`selectedBlock = ${selectedBlock}, name = ${name}`);
+  // console.log(`selectedBlock = ${selectedBlock}, name = ${name}`);
   // const selectedButtonClass = {
   //   border: '2px solid red',
   // };

@@ -11,7 +11,7 @@ const ModuleMenuBox = styled.ul`
 `;
 
 const ModuleMenu = ({ apps, selectedApp, handleClick}) => {
-  console.log('apps = ', apps);
+  // console.log('apps = ', apps);
 
 
 

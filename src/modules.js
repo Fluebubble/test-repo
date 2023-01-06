@@ -18,7 +18,7 @@ export const data = {
     {
       id: 4,
       name: 'Module 4',
-      apps: ['Form', 'Color Picker', 'Contact Book'],
+      apps: ['Form', 'Color Picker', 'Counter', 'Clock', 'Contact Book', 'Video', 'Pokemon'],
     },
     {
       id: 5,
